@@ -36,7 +36,7 @@ jobs:
         timeout-minutes: 348
         run: |
           npm install
-          echo -e "${{ secrets.UID01 }}\n${{ secrets.UID02 }}\n${{ secrets.UID03 }}\n${{ secrets.UID04 }}\n${{ secrets.UID05 }}" > uid.txt
+          echo -e "${{ secrets.UID01 }}\n${{ secrets.UID02 }}\n${{ secrets.UID03 }}\n${{ secrets.UID04 }}\n${{ secrets.UID05 }}\n${{ secrets.UID06 }}\n${{ secrets.UID07 }}\n${{ secrets.UID08 }}\n${{ secrets.UID09 }}" > uid.txt
           wget -O proxy-1.txt ${{ secrets.RAW_PROXY01 }}
           wget -O proxy-2.txt ${{ secrets.RAW_PROXY02 }}
           wget -O proxy-3.txt ${{ secrets.RAW_PROXY03 }}
