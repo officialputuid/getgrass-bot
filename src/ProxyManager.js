@@ -33,6 +33,7 @@ async function readLines(filename) {
   }
 }
 
+/*
 async function selectProxySource(inquirer) {
   const choices = [...Object.keys(PROXY_SOURCES), 'CUSTOM', 'NO PROXY'];
   const { source } = await inquirer.prompt([
@@ -61,6 +62,14 @@ async function selectProxySource(inquirer) {
   }
 
   return { type: 'url', source: PROXY_SOURCES[source] };
+}
+*/
+
+async function selectProxySource() {
+  return {
+    type: 'file',
+    source: 'proxy.txt'
+  };
 }
 
 module.exports = { fetchProxies, readLines, selectProxySource };
