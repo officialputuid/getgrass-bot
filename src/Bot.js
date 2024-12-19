@@ -105,6 +105,8 @@ class Bot {
           );
         } else if (msg.action === 'PONG') {
           console.log(`Received PONG: ${JSON.stringify(msg)}`.blue);
+        } else if (msg.action === 'HTTP_REQUEST') {
+          console.log(`Received HTTP_REQUEST: ${JSON.stringify(msg)}`.blue);
         }
       });
 
@@ -175,6 +177,8 @@ class Bot {
           );
         } else if (msg.action === 'PONG') {
           console.log(`Received PONG: ${JSON.stringify(msg)}`.blue);
+        } else if (msg.action === 'HTTP_REQUEST') {
+          console.log(`Received HTTP_REQUEST: ${JSON.stringify(msg)}`.blue);
         }
       });
 
